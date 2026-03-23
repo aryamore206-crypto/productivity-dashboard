@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Productivity Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+
+        <div class="header">
+            <h1 id="greeting"></h1>
+            <p class="subtitle">Stay consistent. Stay productive 🚀</p>
+        </div>
+
+        <!-- Task Section -->
+        <div class="card">
+            <h2>📋 Tasks</h2>
+            <div class="task-input">
+                <input type="text" id="taskInput" placeholder="Enter a task">
+                <button onclick="addTask()">Add</button>
+            </div>
+            <ul id="taskList"></ul>
+        </div>
+
+        <!-- Timer Section -->
+        <div class="card">
+            <h2>⏱ Study Timer</h2>
+            <h3 id="timer">00:00</h3>
+            <div class="timer-buttons">
+                <button onclick="startTimer()">Start</button>
+                <button onclick="stopTimer()">Stop</button>
+            </div>
+        </div>
+
+        <!-- Quote Section -->
+        <div class="card">
+            <h2>💡 Motivation</h2>
+            <p id="quote">Stay focused and never give up 🚀</p>
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
